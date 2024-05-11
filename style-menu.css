@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', Helvetica, sans-serif;
+}
+
+h1{
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+h2{
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background:#202020;
+}
+#menu-home{
+    list-style: none;
+    padding: 0;
+    background-color: #754f27;
+}
+
+#menu-home li{
+    display: inline;
+    left: 0;
+}
+#menu-home li ul{
+    display: none;
+    position: absolute;
+    
+}
+#menu-home li:hover ul{
+    display: block;
+
+}
+#menu-home li ul li{
+    background-color: #754f27;
+    text-align: center;
+    display: block;
+}
+#menu-home li a{
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: backgroud .4s;
+    
+}
+
+#menu-home li a:hover{
+    color: #754f27;
+    background-color: black;
+}
+#menu-home li:last-child a {
+    float: right;
+}
+
+
+#news-container {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.news-item {
+    display: none;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    text-align: center;
+    
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOIE SEU TIME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">APOIE SEU TIME! VISTA A CAMISA COM O CORAÇÃO</h1>
+    <div class="container">
+        <div class="product">
+            <div class="image">
+                <img class="product-image" src="loud.jpg" alt="uniforme da loud">
+            </div>
+            <div class="color">
+                <span class="verde active" data-image="loud.jpg" data-color="#20ed17" data-title="UNIFORME LOUD 2023" data-price="125.00"></span>
+                <span class="red" data-image="red.jpeg" data-color="#ce0e12" data-title="UNIFORME RED CANIDS 2023" data-price="135.00"></span>
+                <span class="pain" data-image="pain.jpg" data-color="#070808" data-title="UNIFORME PAIN 2023" data-price="120.00"></span>
+                <span class="keyd" data-image="keyd.jpeg" data-color="#6a2d88" data-title="UNIFORME VIVO KEYD 2023" data-price="130.00"></span>
+            </div>
+            <div class="title">
+                UNIFORME LOUD 2023
+            </div>
+        
+            <div class="detail">
+                <p>PREÇO: <span>R$125,00</span></p>
+                <a href="#"> COMPRAR AGORA!</a>
+            </div>
+                 
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+
+        $(".color span").click(function(){
+            var title = $(this).attr("data-title");
+            var price = parseFloat($(this).attr("data-price")).toFixed(2);
+            $(".title").text(title);
+            $(".detail span").text("R$" + price);
+            $(".color span").removeClass("active");
+            $(this).addClass("active");
+            $(".detail span").css("color", $(this).attr("data-color"));
+            $(".detail a").css("background",$(this).attr("data-color"));
+            $(".product-image").attr("src",$(this).attr("data-image"));
+            $("body").css("background",$(this).attr("data-color"));
+        });
+    </script>
+    
+    <body class="botao">
+        
+        
+        <button class="back-button" onclick="voltarMenu()">Voltar ao Menu</button>
+    
+        <script>
+            function voltarMenu() {
+                // Redirecionar para a página do menu principal
+                window.location.href = "index.html";
+            }
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>
