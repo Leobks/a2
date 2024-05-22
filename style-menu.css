@@ -89,3 +89,24 @@ body{
     text-align: center;
     
 }
+
+.news-item {
+    display: block;
+    border: 2px solid #754f27; /* Bordas brancas */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra branca */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.news-title {
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Adiciona um efeito de hover para os títulos */
+.news-title:hover {
+    color: #754f27; /* Cor do texto quando passa o mouse */
+}
